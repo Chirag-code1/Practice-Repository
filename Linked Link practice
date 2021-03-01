@@ -1,1 +1,133 @@
+#include <iostream>
 
+using namespace std;
+
+class node{
+    public:
+    int data;
+    node* next;
+    
+    node(int val){
+        data=val;
+        next=NULL;
+    }
+};
+
+void insertAtHead(node* &head,int val){
+    node* n= new node(val);
+    n->next=head;
+    head=n;
+}
+
+void insertAtTail(node* &head, int val){
+    node* n= new node(val);
+    if(head==NULL){
+        insertAtHead(head,val);
+        return;
+    }
+    
+    node* temp=head;
+    while(temp->next!=NULL){
+        temp=temp->next;
+    }
+    temp->next=n;
+}
+
+void display(node* head){
+    if(head==NULL){
+        cout<<"Linked List is EMPTY!"<<endl;
+    }
+    while(head!=NULL){
+        cout<<head->data<<" ";
+        head=head->next;
+    }
+    cout<<endl;
+}
+
+bool find(node* head, int val){
+    node* temp=head;
+    while(temp->next!=NULL){
+        if(temp->data==val){
+            return true;
+        }
+        temp=temp->next;
+    }
+    return false;
+}
+
+void deleteAtHead(node* &head){
+    if(head==NULL){
+        return;
+    }
+    node* todelete=head;
+    head=head->next;
+    delete todelete;
+}
+
+void deleteAtTail(node* &head, int val){
+    if(head==NULL){
+        return;
+    }
+    if(head->next==NULL){
+       deleteAtHead(head);
+    }
+    
+    node* temp=head;
+    while(temp->next->data!=val){
+        temp=temp->next;
+    }
+    node* todelete= temp->next;
+    temp->next=temp->next->next;
+    delete todelete;
+}
+
+node* reverse(node* &head){
+    node* preptr=NULL;
+    node* curptr=head;
+    node* nextptr;
+    while(curptr!=NULL){
+        nextptr=curptr->next;
+        curptr->next=preptr;
+        
+        preptr=curptr;
+        curptr=nextptr;
+    }
+    
+    return preptr;
+    
+}
+
+node* recursiveReverse(node* head){
+    if(head==NULL || head->next==NULL){
+        return head;
+    }
+    node* newHead=recursiveReverse(head->next);
+    head->next->next=head;
+    head->next=NULL;
+    return newHead;
+}
+
+int main()
+{
+    node* head= NULL;
+    insertAtHead(head,1);
+    insertAtTail(head,2);
+    insertAtTail(head,3);
+    insertAtTail(head,4);
+    insertAtTail(head,5);
+    insertAtTail(head,7);
+    display(head);// 1 2 3 4 5
+    cout<<find(head,9)<<endl; //0
+  // deleteAtTail(head,1);
+  // deleteAtHead(head);
+  // display(head); // 2 3 4 5
+  //node* reversedHead=reverse(head);
+  //display(reversedHead);
+    node* reversedHeadRecursively=recursiveReverse(head);
+   display(reversedHeadRecursively);
+   
+   
+   
+
+    return 0;
+}
