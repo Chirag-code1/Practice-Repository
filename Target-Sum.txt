@@ -53,7 +53,7 @@ int main()
 	//S1 -(array_sum - S1) = Target Sum.   or,
 	// 2(s1)-array_sum= Target Sum.     or,
 	// *******s1 = (array_sum + Target Sum)/2;*****
-	// And tus, this Target sum problem has reduced to Subset Sum Problem.
+	// And thus, this Target sum problem has reduced to Subset Sum Problem.
 	
 	sum=(sum_array+target)/2;
 
