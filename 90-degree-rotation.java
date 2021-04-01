@@ -1,4 +1,4 @@
-/Matrix Rotation 90 degrees clockwise.
+//Matrix Rotation 90 degrees clockwise.
 public class Main
 {
 
