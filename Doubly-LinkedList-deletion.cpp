@@ -84,5 +84,6 @@ int main()
     display(head);
     deletion(head,1);
     display(head);
+
     return 0;
 }
