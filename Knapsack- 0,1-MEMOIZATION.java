@@ -52,5 +52,6 @@ public static void main(String [] args)
 	int N = val.length;		 
 
 	System.out.println(knapSack(W, wt, val, N)); 
-}	 
+}
+	 
 }
