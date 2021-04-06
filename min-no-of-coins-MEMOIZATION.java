@@ -37,6 +37,7 @@ static int mincoins(int n, int a[],int dp[]){
         }
        
     }
+
     return dp[n]=ans;
 }
 
