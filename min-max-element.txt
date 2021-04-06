@@ -24,6 +24,7 @@ public static void main(String[] args){
         }
     }
     
+
     System.out.println("Maximum Element\t"+max+". It's Index:\t"+flag);
     System.out.println("Minimun Element\t"+min+". It's Index:\t"+temp);
     
