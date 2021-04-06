@@ -22,6 +22,7 @@ public class Main{
         for(i=0;i<n;i++){
             GettingSum+=array[i];
         }
+
         int missing_num=ReqSum-GettingSum;
         System.out.println("Missing number is :\t"+missing_num);
         
