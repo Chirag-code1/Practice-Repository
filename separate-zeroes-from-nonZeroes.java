@@ -25,7 +25,7 @@ public class Main{
       while(pos<array.length){
           array[pos]=0;
           pos++;
-      }
+     }
       
       System.out.println("Array with separated Zeroes:\n");
       for(i=0;i<n;i++){
