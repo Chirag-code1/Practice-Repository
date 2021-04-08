@@ -25,7 +25,6 @@ public class Main{
                 array[i]=array[n-1-i];
                 array[n-1-i]=temp;
                
-           
         } 
         System.out.println("\nReversed Array:");
         for(i=0;i<array.length;i++){
