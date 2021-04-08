@@ -1,4 +1,4 @@
-class Main
+public class Main
 {
 	// Function to print all sub-arrays with 0 sum present
 	// in the given array
