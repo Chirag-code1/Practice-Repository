@@ -1,0 +1,17 @@
+int getNode(SinglyLinkedListNode* head, int positionFromTail) {
+SinglyLinkedListNode* curr=head;
+int count=0;
+while(curr)
+{
+    count++;
+    curr=curr->next;
+}
+int n=count-positionFromTail-1;
+curr=head;
+while(curr && n>0)
+{
+    curr=curr->next;
+    n--;
+}
+return curr->data;
+}
