@@ -27,8 +27,7 @@ void printLeafNodes(Node *root)
 	if (root->left)
 	printLeafNodes(root->left);
 		
-	// if right child exists, check for leaf
-	// recursively
+	// if right child exists, check for leaf, recursively
 	if (root->right)
 	printLeafNodes(root->right);
 }
