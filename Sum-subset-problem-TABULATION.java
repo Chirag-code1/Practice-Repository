@@ -21,8 +21,7 @@ public class Main {
 			for (int j = 1; j <= n; j++) {
 				
 				if (set[j - 1]<=i)
-					subset[i][j] = subset[i][j-1]
-								|| subset[i - set[j - 1]][j - 1];
+					subset[i][j] = subset[i][j-1] || subset[i - set[j - 1]][j - 1];
 								
 								else{
 								    subset[i][j] = subset[i][j - 1];
