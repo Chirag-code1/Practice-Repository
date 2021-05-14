@@ -19,16 +19,13 @@ static int knapSackRec(int W, int wt[],
 	if (wt[n - 1] > W) 
 
 
-		return dp[n][W] = knapSackRec(W, wt, val, 
-									n - 1, dp);
+		return dp[n][W] = knapSackRec(W, wt, val, n - 1, dp);
 
 	else
 
 		return dp[n][W] = max((val[n - 1] + 
-							knapSackRec(W - wt[n - 1], wt,
-										val, n - 1, dp)),
-							knapSackRec(W, wt, val, 
-										n - 1, dp));			 
+							knapSackRec(W - wt[n - 1], wt, val, n - 1, dp)),
+							knapSackRec(W, wt, val, n - 1, dp));			 
 }
 
 static int knapSack(int W, int wt[], int val[], int N)
