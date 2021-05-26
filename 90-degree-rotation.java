@@ -4,8 +4,7 @@ public class Main
 
 // Function to reverse rows of the matrix
  public static void reverse_rows(int mat[][])
- {
- int k;
+ { int k;
  for (int i = 0; i < mat.length; i++)
  {
  k = mat.length-1;
