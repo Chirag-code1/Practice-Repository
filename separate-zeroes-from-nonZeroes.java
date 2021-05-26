@@ -30,7 +30,6 @@ public class Main{
       System.out.println("Array with separated Zeroes:\n");
       for(i=0;i<n;i++){
           System.out.print(array[i]);
-      }
-        
+      }     
     }
 }
