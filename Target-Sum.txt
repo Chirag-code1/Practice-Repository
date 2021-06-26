@@ -57,5 +57,5 @@ int main()
 	
 	sum=(sum_array+target)/2;
 
-	cout << (subsetSum(a, n, sum));
+	cout << (subsetSum(a, n, sum))<<endl;
 }
