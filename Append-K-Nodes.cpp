@@ -93,7 +93,7 @@ node* kappend(node* &head, int k){ // here, k is the node number from where link
     
 }
 
-int main(){
+int main() {
     node* head=NULL;
     insertAtHead(head,10);
     insertAtTail(head,20);
