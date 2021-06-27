@@ -68,7 +68,7 @@ public class Main
 		int arr[] = {1,2,7};
 		int n = arr.length;
 		System.out.println ("The minimum difference between 2 sets is "
-							+ findMin(arr, n));
+							+ findMin(arr,n));
 	
 	}
 }
