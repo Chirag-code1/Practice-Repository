@@ -103,6 +103,10 @@ int main()
   makecycle(head,3);
   //display(head);
   cout<<detectCycle(head)<<endl;
+
+  //makecycle(head, 4);
+  //cout << detectCycle(head)<<endl;
+
   removeCycle(head);
     cout<<detectCycle(head)<<endl;
 display(head);
