@@ -47,7 +47,7 @@ void display(node* head){
 }
 
 void deleteAtHead(node* &head){
-    node* todelete=head;
+    node* todelete= head;
     head=head->next;
     head->prev=NULL;
     
