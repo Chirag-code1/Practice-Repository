@@ -7,7 +7,7 @@ int subsetSum(int a[], int n, int sum)
 	int t[n + 1][sum + 1];
 
 
-    //initilizing Ist row, coze any array with 0 element cannot yeild any sum except for ZERO.
+    //initilizing Ist row, b'coze any array with 0 element cannot yeild any sum except for ZERO.
 	for (int i = 0; i <= sum; i++)
 		t[0][i] = 0;
 		
