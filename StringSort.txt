@@ -30,6 +30,6 @@ class Main
         sortStrings(arr, n);
         System.out.println("Strings in sorted order are : ");
         for (int i = 0; i < n; i++)
-            System.out.println("String " + (i + 1) + " is " + arr[i]);
+           System.out.println("String " + (i + 1) + " is " + arr[i]);
     }
 }
